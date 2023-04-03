@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    /* https://midu.dev/que-es-y-para-que-sirve-box-sizing-border-box/ */
+    font-family: "Lucida Sans", sans-serif;
+   
+}
+body {background-color: #dda815;}
+.col25 {
+    float: left;
+    padding: 15px;
+    width: 25%;
+}
+
+.col50 {
+    float: left;
+    padding: 15px;
+    width: 50%;
+}
+
+.col100 {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-weight: bold; text-align: center;
+}
+h2 {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: bold; font-size: 40px; text-align: center;}
+
+header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+}
+p {font-family: 'Times New Roman', Times, serif; color: rgb(200, 20, 110); background-color: rgb(10, 200, 110);}
+div {
+    text-align-last: center;
+}
+table {background-color: #18df5a;}
+span {
+    padding: 15px;
+    width: 100%;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+}
+
+.menu li:hover {
+    color: #0099cc;
+    background-color: white;
+}
+
+.aside {
+    background-color: #6533e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+footer {
+    background-color: #247e2c;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 12px;
+}
