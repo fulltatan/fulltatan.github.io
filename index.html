@@ -1,74 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayana Movimiento - Bienestar y Movimiento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #4CAF50; /* A vibrant green similar to your logo */
+            --dark-green: #2E7D32;
+            --text-color: #333;
+            --light-grey: #f4f4f4;
+            --white: #ffffff;
+        }
 
-    <title>esolololo</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="gato-montanes.ico"
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--white);
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 1px solid var(--light-grey);
+        }
+
+        header .logo {
+            max-width: 300px; /* Adjust as needed */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1, h2, h3 {
+            color: var(--dark-green);
+            font-family: 'Open Sans', sans-serif; /* Keep a clean sans-serif for headings */
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 1.5em;
+            border-bottom: 2px solid var(--primary-green);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 1em;
+        }
+
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--light-grey);
+        }
+
+        .about-us, .services, .schedule, .contact {
+            margin-bottom: 40px;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .services li {
+            background-color: var(--white);
+            border: 1px solid var(--primary-green);
+            padding: 20px;
+            border-radius: 8px;
+            width: 280px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .services li:hover {
+            transform: translateY(-5px);
+        }
+
+        .services li h3 {
+            color: var(--dark-green);
+            margin-top: 0;
+        }
+
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .schedule th, .schedule td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .schedule th {
+            background-color: var(--primary-green);
+            color: var(--white);
+            text-transform: uppercase;
+        }
+
+        .schedule tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .schedule tr:hover {
+            background-color: #ddd;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: var(--dark-green);
+        }
+
+        footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .services ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .services li {
+                width: 90%;
+            }
+
+            .schedule table, .schedule thead, .schedule tbody, .schedule th, .schedule td, .schedule tr {
+                display: block;
+            }
+
+            .schedule thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            .schedule tr {
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+            }
+
+            .schedule td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+
+            .schedule td:before {
+                position: absolute;
+                top: 0;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+                content: attr(data-label);
+            }
+        }
+    </style>
 </head>
-
 <body>
+
     <header>
-        <h1>Prueba de fuego bolo</h1>
-        <h2>holishi</h2>
+        <div class="container">
+            <img src="URL_DEL_LOGO_AYANA_MOVIMIENTO.png" alt="Ayana Movimiento Logo" class="logo">
+            <h1>Ayana Movimiento</h1>
+            <p>bienestar y movimiento</p>
+        </div>
     </header>
-    <div>
-        <ul class="menu col50">
-            <li class="menu">esto es</li>
-            <li>una</li>
-            <li>prueba de faier</li>
-            <li>boloooooo</li>
-        </ul>
-    </div>
-    <div>
-        <ul class="menu col50">
-            <li class="menu">saracatuna</li>
-            <li>todos</li>
-            <li>queremos</li>
-            <li>saracatun</li>
-        </ul>
-    </div>
-    <div>
-        <table class="col100" border="1">
-            <tr>
-                <td>titulo</td>
-                <td>descripcion</td>
-            </tr>
-            <tr>
-                <td>soy una prueba</td>
-                <td>una maravillosa prueba</td>
-            </tr>
-            <tr>
-                <td colspan="2">salamin</td>
-            </tr>
-        </table>
 
-    </div>
-    <h2>saracatybga</h2>
-    <div>
-        <span><a href="https://www.nodal.am/category/la-columna-de-pedro-brieger/" target="_blank"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/26/Pedro_Brieger.jpg"
-                    alt="el pedro"></a></span>
-        <span><a href="https://www.youtube.com/watch?v=1OeC9CGtWcM" target="_blank"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ84j7OTbbm85SsEki58-Ge6KFJYcTnb4Pdf7nKwm4Rg&s"
-                    alt "mecaninca"></a></span>
-    </div>
+    <main>
+        <section id="inicio" class="about-us">
+            <div class="container">
+                <h2>Bienvenida a Ayana Movimiento</h2>
+                <p>En Ayana Movimiento, te invitamos a un espacio donde el bienestar y el movimiento se unen para nutrir tu cuerpo, mente y espíritu. Ofrecemos clases de yoga y pilates diseñadas para todos los niveles, desde principiantes hasta practicantes avanzados. Nuestro objetivo es ayudarte a encontrar equilibrio, fuerza y flexibilidad en un ambiente cálido y de apoyo.</p>
+                <p>Creemos que el movimiento es una fuente de alegría y vitalidad, y estamos comprometidos a guiarte en tu camino hacia una vida más plena y consciente.</p>
+                <a href="#contacto" class="button">¡Contáctanos para tu primera clase!</a>
+            </div>
+        </section>
 
-    <div>
-        <p>A la vivora vvora de la mar lalalalilalliiillala Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Sequi voluptatem recusandae impedit repellendus provident obcaecati maxime unde quis, reprehenderit
-            distinctio, delectus voluptatum alias! Dolore voluptatem sequi quidem tempore quasi aliquid. y a lña pelota
-            wacho forrroooooooooooooooooooooooooooooooooo nabolin</p>
-    </div>
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <ul>
+                    <li>
+                        <h3>Yoga</h3>
+                        <p>Explora diferentes estilos de yoga como Hatha, Vinyasa y Restaurativo. Mejora tu flexibilidad, fortalece tu cuerpo, reduce el estrés y encuentra paz interior a través de la respiración consciente y las posturas.</p>
+                    </li>
+                    <li>
+                        <h3>Pilates</h3>
+                        <p>Fortalece tu centro, mejora la postura y aumenta la conciencia corporal con nuestras clases de Pilates. Trabaja en la estabilidad, el control y la precisión de tus movimientos para un cuerpo más equilibrado y resistente.</p>
+                    </li>
+                    <li>
+                        <h3>Clases Personalizadas</h3>
+                        <p>Ofrecemos sesiones individuales adaptadas a tus necesidades y objetivos específicos. Recibe atención personalizada para avanzar más rápido o trabajar en áreas particulares.</p>
+                    </li>
+                    <li>
+                        <h3>Talleres y Eventos</h3>
+                        <p>Participa en nuestros talleres especiales sobre temas como meditación, nutrición, técnicas avanzadas de yoga/pilates y bienestar holístico. Mantente atento a nuestras próximas fechas.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
+        <section id="horarios" class="schedule">
+            <div class="container">
+                <h2>Horarios de Clases</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Hora</th>
+                            <th>Actividad</th>
+                            <th>Nivel</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Día">Lunes</td>
+                            <td data-label="Hora">09:00 - 10:00</td>
+                            <td data-label="Actividad">Pilates Mat</td>
+                            <td data-label="Nivel">Todos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Lunes</td>
+                            <td data-label="Hora">18:30 - 19:30</td>
+                            <td data-label="Actividad">Yoga Vinyasa</td>
+                            <td data-label="Nivel">Intermedio</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Martes</td>
+                            <td data-label="Hora">10:30 - 11:30</td>
+                            <td data-label="Actividad">Yoga Suave</td>
+                            <td data-label="Nivel">Principiantes</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Martes</td>
+                            <td data-label="Hora">19:00 - 20:00</td>
+                            <td data-label="Actividad">Pilates Reformer</td>
+                            <td data-label="Nivel">Todos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Miércoles</td>
+                            <td data-label="Hora">09:30 - 10:30</td>
+                            <td data-label="Actividad">Yoga Hatha</td>
+                            <td data-label="Nivel">Todos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Miércoles</td>
+                            <td data-label="Hora">18:00 - 19:00</td>
+                            <td data-label="Actividad">Pilates Mat</td>
+                            <td data-label="Nivel">Todos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Jueves</td>
+                            <td data-label="Hora">11:00 - 12:00</td>
+                            <td data-label="Actividad">Yoga Restaurativo</td>
+                            <td data-label="Nivel">Todos</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Jueves</td>
+                            <td data-label="Hora">19:30 - 20:30</td>
+                            <td data-label="Actividad">Yoga Vinyasa</td>
+                            <td data-label="Nivel">Intermedio</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Día">Viernes</td>
+                            <td data-label="Hora">09:00 - 10:00</td>
+                            <td data-label="Actividad">Pilates Mat</td>
+                            <td data-label="Nivel">Todos</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>¡Contáctanos para reservar tu lugar!</p>
+            </div>
+        </section>
 
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>Contáctanos</h2>
+                <div class="contact-info">
+                    <p>¡Estamos listos para ayudarte a iniciar tu camino hacia el bienestar!</p>
+                    <p><strong>Teléfono:</strong> <a href="tel:+549223XXXXXXX">+54 9 223 XXXXXXX</a> (Número de Mar del Plata)</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@ayanamovimiento.com">info@ayanamovimiento.com</a></p>
+                    <p><strong>Dirección:</strong> Tu Dirección del Local, Mar del Plata, Buenos Aires</p>
+                    <p><strong>Síguenos en:</strong>
+                        <a href="https://www.instagram.com/ayanamovimiento" target="_blank" rel="noopener noreferrer">Instagram</a> |
+                        <a href="https://www.facebook.com/ayanamovimiento" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </p>
+                </div>
+                <div class="google-maps">
+                    <h3>Encuéntranos en el mapa:</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.7214959458925!2d-57.55835908468766!3d-38.00030597972411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!1s0x9584d94d12c6a0c5%3A0x6b4c2b9f9c7e0c9!2sMar%20del%20Plata%2C%20Buenos%20Aires%20Province!5e0!3m2!1sen!2sar!4v1678901234567!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><small>La ubicación en el mapa es un ejemplo. Por favor, reemplaza el código con la ubicación exacta de tu local.</small></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <footer>yo soy un futer</footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ayana Movimiento. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
 </body>
-
 </html>
